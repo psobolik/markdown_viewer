@@ -1,0 +1,50 @@
+[application]
+
+[bundle]
+# This doesn't quite work. The stylesheet is installed in /usr/lib/Mdvw/assets,
+# but the app doesn't seem to look for it there.
+name = "mdvw"
+productName = "mdvw"
+short_description = "A Markdown file viewer"
+copyright = "2025 Paul Sobolik"
+version = "0.1.0"
+identifier = "psobolik.markdown-viewer"
+publisher = "psobolik"
+active = true
+targets = "deb"
+# These are not actually used because the desktop file specifies NoDisplay
+icon = [
+    "icons/32x32.png",
+    "icons/128x128.png",
+    "icons/128x128@2x.png",
+    "icons/icon.icns",
+    "icons/icon.ico"
+]
+deb = { desktop_template = "desktop-template", files = {} }
+
+#[[bundle.fileAssociations]]
+#ext = ["md"]
+#mime.type = "text/markdown"
+
+#[bundle.deb]
+#desktop_template = "desktop-template"
+#files = {}
+
+[web.app]
+
+# HTML title tag content
+#title = "markdown_viewer"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []

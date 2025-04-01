@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=
+Comment=A Markdown file viewer
+Exec=mdvw %f
+Icon=/home/psobolik/.local/share/icons/mdvw.svg
+Name=Markdown Viewer
+Terminal=false
+Type=Application
+NoDisplay=true
+MimeType="text/markdown"

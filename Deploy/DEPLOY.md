@@ -31,5 +31,5 @@ $ xdg-desktop-menu install --novendor ~/Development/dioxus/markdown_viewer/Deplo
 
 I also made `mdvw` the default handler for Markdown files:
 ```shell
-$ xdg-mime query default text/markdown 
+$ xdg-mime default mdvw.desktop "text/markdown" 
 ```
